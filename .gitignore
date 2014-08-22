@@ -1,2 +1,7 @@
 _site
-.swp
+
+# vim temporary files
+.*.swp
+
+# Emacs temporary files
+*~

@@ -7,7 +7,7 @@ The homepage for Interhigh.
 ### Cloning the repository
 
 ```bash
-git@github.com:interhigh/interhigh.github.io.git
+git clone git@github.com:interhigh/interhigh.github.io.git
 ```
 
 ### Setting up the environment
@@ -17,11 +17,40 @@ First, make sure you have Ruby and RubyGems installed. You will also need NodeJS
 * [Ruby Installation](http://www.ruby-lang.org/en/downloads/)
 * [RubyGems Installation](http://rubygems.org/pages/download)
 
+Install Homebrew
+```
+ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+```
+
+
+Use Homebrew to install rbenv (the tool that will manage your ruby installations)
+```
+brew install rbenv
+brew install ruby-build
+brew install rbenv-gem-rehash
+```
+
+Setup rbenv in your PATH by adding the following to your ~/.bash_profile
+```
+export PATH="$HOME/.rbenv/bin:$PATH"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+```
+
+Use rbenv to install Ruby
+```
+rbenv install 2.1.2
+rbenv global 2.1.2
+```
+
+Install bundler
+```
+gem install bundler
+```
+
 Run the following commands:
 
 ```bash
 cd interhigh.github.io
-gem install bundler
 gem install jekyll
 bundle install
 ```

@@ -75,6 +75,13 @@ Then you can find the webpage running at ```http://127.0.0.1:4000/```.
 3. Push to the branch (`git push origin my-new-feature`)
 4. Create new Pull Request
 
+### Useful Git Commands
+
+#### Pulling in updates from a different branch to your branch
+
+`git pull origin master` When `master` branch has new changes, you'd want to make sure your branch incorporates those changes. This might give you conflicts that you'll need to resolve (e.g. if the file you're changing got changed on `master` branch). Git should tell you which files they are.
+
+This is a good resource to learn how to resolve conflicts: https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line
 
 ## Resources
 

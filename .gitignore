@@ -5,3 +5,6 @@ _site
 
 # Emacs temporary files
 *~
+
+# Sass files
+.sass-cache

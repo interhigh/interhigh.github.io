@@ -1,14 +1,12 @@
 # Site settings
-title: Your awesome title
+title: The to-be Interhigh Website
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio esse consequuntur ipsa quaerat quae, sapiente ullam nesciunt tempora, enim laudantium velit corporis soluta, quisquam facere. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque provident repellat officiis reiciendis animi laborum fugiat esse voluptas incidunt necessitatibus deleniti, quibusdam, ab, labore fuga!
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: blahblahblah
+github_username:  blahblahblah
 
 # Build settings
 markdown: kramdown

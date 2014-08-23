@@ -68,6 +68,14 @@ bundle exec jekyll serve
 
 Then you can find the webpage running at ```http://127.0.0.1:4000/```.
 
+## Contributing
+
+1. Create your feature branch (`git checkout -b my-new-feature`)
+2. Commit your changes (`git commit -am 'Add some feature'`)
+3. Push to the branch (`git push origin my-new-feature`)
+4. Create new Pull Request
+
+
 ## Resources
 
 * [Jekyll Documentation](http://jekyllrb.com/docs/home/) - Explains how Jekyll works

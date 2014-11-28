@@ -12,3 +12,17 @@ url: "http://www.interhigh.org" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
+
+defaults:
+  -
+    scope:
+      path: _posts/en
+    values:
+      layout: default
+      lang: en
+  -
+    scope:
+      path: _posts/ko
+    values:
+      layout: default
+      lang: ko

@@ -32,7 +32,8 @@ class AutoTranslate
   attr_accessor :to
 
 
-  def initialize(translator=BING, from=ENGLISH, to=KOREAN)
+  def initialize(project_root_path, translator=BING, from=ENGLISH, to=KOREAN)
+    @project_root_path = project_root_path
     @translator = translator
     @from = from
     @to = to
@@ -47,7 +48,8 @@ class AutoTranslate
   end
 
   def translate_bing(to_translate)
-    translator = BingTranslator.new(@from, @to)
+    client_secret = File.read("#{@project_root_path}/bing-translator-client-secret").strip()
+    translator = BingTranslator.new(@from, @to, client_secret)
     translator.translate(to_translate)
   end
 
@@ -66,9 +68,10 @@ class BingTranslator
   #
   # @param The language code to translate from
   # @param The language code to translate to
-  def initialize(from, to)
+  def initialize(from, to, client_secret)
     @from = from
     @to = to
+    @client_secret = client_secret
     @access_token = fetch_access_token
   end
 
@@ -84,15 +87,13 @@ class BingTranslator
 
   # Gets the access token necessary for translation requests
   def fetch_access_token
-    client_secret = '2qr3A7LUfZKGuPIgn8VNx6EmISm3Y4X0rGeXZJOxTvk='
-
     # See http://msdn.microsoft.com/en-us/library/hh454950.aspx
     # Also: https://datamarket.azure.com/developer/applications/edit/InterhighTranslations
     oauth_uri = 'https://datamarket.accesscontrol.windows.net/v2/OAuth2-13'
 
     post_data = {
       'client_id' => 'InterhighTranslations',
-      'client_secret' => client_secret,
+      'client_secret' => @client_secret,
       'scope' => 'http://api.microsofttranslator.com',
       'grant_type' => 'client_credentials',
     }
@@ -236,7 +237,7 @@ class JekyllTranslator
         to_files = Dir.entries("#{@posts_path}/#{to}/").select { |file| file.end_with?(".markdown") }
         new_files = from_files.select { |file| not to_files.include?(file) }
 
-        at = AutoTranslate.new(AutoTranslate::BING, from, to)
+        at = AutoTranslate.new(@project_root_path, AutoTranslate::BING, from, to)
         ft = FileTranslator.new(at)
 
         new_files.each do |new_file|
@@ -268,8 +269,8 @@ from_languages = [AutoTranslate::ENGLISH]
 to_languages = [AutoTranslate::KOREAN, AutoTranslate::CHINESE_TRADITIONAL]
 jt = JekyllTranslator.new(project_root_path, from_languages, to_languages)
 jt.puts_welcome
-jt.translate()
 begin
+  jt.translate()
 rescue
   puts "An error occurred while trying to translate the documents. Please sure you are connected to the internet."
 end

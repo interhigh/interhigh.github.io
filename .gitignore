@@ -8,3 +8,6 @@ _site
 
 # Sass files
 .sass-cache
+
+# Auto-translator secret key
+bing-translator-client-secret

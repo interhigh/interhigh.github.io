@@ -26,3 +26,9 @@ defaults:
     values:
       layout: default
       lang: ko
+  -
+    scope:
+      path: _posts/zh-CHT
+    values:
+      layout: default
+      lang: zh-CHT

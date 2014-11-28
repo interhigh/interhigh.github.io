@@ -15,7 +15,7 @@ Everything between the "[translate]: #start" and "[translate]: #end" tags
 will be translated.
 Note that the tags must be on their own separate lines with no extra text.
 Also, there MUST be a line break before writing [translate]: #end, or else the
-tag will appear in the test.
+tag will appear in the text.
 
 =end
 class AutoTranslate

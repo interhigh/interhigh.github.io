@@ -6,9 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Brian Choi, Dung Tran, and David Wu are bringing you a brand new site
   for InterHigh!
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://www.interhigh.org" # the base hostname & protocol for your site
-# twitter_username: jekyllrb
-# github_username:  jekyll
+url: "http://www.interhigh.org"
 
 # Build settings
 markdown: kramdown
@@ -32,3 +30,16 @@ defaults:
     values:
       layout: default
       lang: zh-CHT
+
+kevin: "boo"
+# Nav bar 
+navigation_bar_entries:
+  - 
+    title: "About Us"
+    path: "/about/"
+  - 
+    title: "A Day At Interhigh"
+    path: "/dayatih/"
+  - 
+    title: "Contact"
+    path: "/contact/"

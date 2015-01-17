@@ -1,26 +1,15 @@
 <footer class="site-footer">
 
   <div class="wrapper">
-<!-- 
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col  footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
+    <nav class="site-nav">
+      <div class="trigger">
+        {% for entry in site.navigation_bar_entries %}
+          {% if entry.title %}
+          <a class="page-link" href="{{ entry.path | prepend: site.baseurl }}">{{ entry.title }}</a>
+          {% endif %}
+        {% endfor %}
       </div>
-
-      <div class="footer-col  footer-col-2">
-        
-      </div>
-
-      <div class="footer-col  footer-col-3">
-        <p class="text">{{ site.description }}</p>
-      </div>
-    </div> -->
-
+    </nav>
   </div>
 
 </footer>

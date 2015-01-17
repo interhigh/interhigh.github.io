@@ -1,19 +1,30 @@
 <header class="site-header">
 
-  <div class="wrapper">
+  <div class="fullnavbar">
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <div class="navbar row">
+      <div class="large-3 columns">
+        <div id="logo">
+          <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+        </div>
+      </div>
 
-    <nav class="site-nav">
-      <div class="trigger">
+      <div class="large-9 columns">
+      <nav>
+        <ul class="buttonbar left button-group">
         {% for entry in site.navigation_bar_entries %}
           {% if entry.title %}
-          <a class="page-link" href="{{ entry.path | prepend: site.baseurl }}">{{ entry.title }}</a>
+          <li class="navitem">
+            <div>
+              <a href="{{ entry.path | prepend: site.baseurl }}">{{ entry.title }}</a>
+            </div>
+          </li>
           {% endif %}
         {% endfor %}
+        </ul>
       </div>
     </nav>
-
+    </div>
   </div>
 
 </header>

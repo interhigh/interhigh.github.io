@@ -1,8 +1,20 @@
 .home {
+  button {
+    background-color: #F27242;
+    border-color: #F27242;
+    border-radius: 4px;
+    border-style: solid;
+    color: #FFF;
+  }
+  button:hover {
+    background-color: #F15A22;
+    border-color: #F15A22;
+  }
+
   .background-content {
     text-align:center;
     height:260px;
-    min-width:645px;
+    min-width:645px; // worry about responsive-ness later
     background-color:#DDD;
     padding:200px 280px 15px 300px;
 
@@ -16,6 +28,7 @@
   .services {
     margin: 50px 0 0 0;
     padding:0 80px 0 145px;
+    min-width:1000px; // worry about responsive-ness later
 
     .service {
       display:inline-block;width:222px;
@@ -25,7 +38,8 @@
 
   .locations-section {
     padding:0 140px 75px 145px;
-    
+    min-width:1000px; // worry about responsive-ness later
+
     .location-list {
       .description {
         display:inline;
@@ -47,6 +61,7 @@
 
   .promo-video-section {
     padding:75px 140px 75px 145px;
+    min-width:1000px; // worry about responsive-ness later
 
     .video {
       height:420px;
@@ -58,6 +73,17 @@
   .signup-section {
     text-align:center;
     padding:75px 140px 75px 145px;
+    min-width:1000px; // worry about responsive-ness later
+
+    .signup-form {
+      input {
+        border: 1px solid #b9b9af;
+        min-height: 35px;
+      }
+      button {
+        height: 37px;
+      }
+    }
 
   }
 

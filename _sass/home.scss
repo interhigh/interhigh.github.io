@@ -1,0 +1,64 @@
+.home {
+  .background-content {
+    text-align:center;
+    height:260px;
+    min-width:645px;
+    background-color:#DDD;
+    padding:200px 280px 15px 300px;
+
+    .description {
+      padding:40px 50px 40px 50px;
+      min-width:510px;
+      background-color:#EEE;
+    }
+  }
+
+  .services {
+    margin: 50px 0 0 0;
+    padding:0 80px 0 145px;
+
+    .service {
+      display:inline-block;width:222px;
+      margin: 0 18px 0 0;
+    }
+  }
+
+  .locations-section {
+    padding:0 140px 75px 145px;
+    
+    .location-list {
+      .description {
+        display:inline;
+      }
+
+      ul {
+        display:inline;
+      }
+
+      li {
+        display:inline;
+        list-style-type: none;
+      }
+    }
+    .map {
+      height:350px;background-color:#DDD;
+    }
+  }
+
+  .promo-video-section {
+    padding:75px 140px 75px 145px;
+
+    .video {
+      height:420px;
+      background-color:#DDD;
+    }
+
+  }
+
+  .signup-section {
+    text-align:center;
+    padding:75px 140px 75px 145px;
+
+  }
+
+}

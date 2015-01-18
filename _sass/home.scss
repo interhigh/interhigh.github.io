@@ -63,13 +63,17 @@
   }
 
   .locations-section {
+    margin: 20px 0 0 0;
     padding:0 140px 75px 145px;
     min-width:1000px; // worry about responsive-ness later
     background-color: $grey-background;
 
     .location-list {
-      .description {
+      margin: 0 0 40px 0;
+      .title {
         display:inline;
+        font-size: 28px;
+        line-height: 33px;
       }
 
       ul {
@@ -79,6 +83,10 @@
       li {
         display:inline;
         list-style-type: none;
+        padding: 5px 5px;
+        margin: 0 10px;
+        font-size: 14px;
+        line-height: 20px;
       }
     }
     .map {
@@ -89,7 +97,8 @@
   .promo-video-section {
     padding:75px 140px 75px 145px;
     min-width:1000px; // worry about responsive-ness later
-
+    background-color: $white;
+    
     .video {
       height:420px;
       background-color:#DDD;

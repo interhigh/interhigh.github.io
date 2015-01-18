@@ -12,9 +12,10 @@
   }
 
   .background-content {
+    background-image: url("/assets/ih_church_welcome.jpg");
     text-align:center;
-    height:260px;
-    min-width:645px; // worry about responsive-ness later
+    height:475px;
+    min-width:1000px; // worry about responsive-ness later
     background-color:#DDD;
     padding:200px 280px 15px 300px;
 
@@ -22,6 +23,9 @@
       padding:40px 50px 40px 50px;
       min-width:510px;
       background-color:#EEE;
+      .title {
+        text-transform: uppercase;
+      }
     }
   }
 

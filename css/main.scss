@@ -15,12 +15,14 @@ $spacing-unit:     30px;
 $text-color:       #111;
 $orange:           #f4a330;
 
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
+$white: #FFFFFF;
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
+
+$grey-background: #F4F7F8;
+
+$background-color: #F4F7F8;
 
 $on-palm:          600px;
 $on-laptop:        800px;

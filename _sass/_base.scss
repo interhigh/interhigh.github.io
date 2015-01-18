@@ -1,16 +1,4 @@
 /**
- * Reset some basic elements
- */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-    margin: 0;
-    padding: 0;
-}
-
-
-
-/**
  * Basic styling
  */
 body {
@@ -21,7 +9,6 @@ body {
     color: $text-color;
     background-color: $background-color;
 }
-
 
 
 /**
@@ -35,7 +22,6 @@ ul, ol, dl, figure,
 }
 
 
-
 /**
  * Images
  */
@@ -43,7 +29,6 @@ img {
     max-width: 100%;
     vertical-align: middle;
 }
-
 
 
 /**
@@ -56,7 +41,6 @@ figure > img {
 figcaption {
     font-size: $small-font-size;
 }
-
 
 
 /**
@@ -83,24 +67,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
 /**
  * Links
  */
 a {
-    color: $brand-color;
+    color: #000;
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: #000;
     }
 
     &:hover {
-        color: $text-color;
-        text-decoration: underline;
+        color: $orange;
+        text-decoration: none;
     }
 }
-
 
 
 /**
@@ -120,41 +102,14 @@ blockquote {
 }
 
 
-
-/**
- * Code formatting
- */
-pre,
-code {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
-}
-
-code {
-    padding: 1px 5px;
-}
-
-pre {
-    padding: 8px 12px;
-    overflow-x: scroll;
-
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
-}
-
-
-
 /**
  * Wrapper
  */
 .wrapper {
-    max-width: -webkit-calc(800px - (#{$spacing-unit} * 2));
-    max-width:         calc(800px - (#{$spacing-unit} * 2));
+    max-width: -webkit-calc(#{$default-page-width} + (#{$spacing-unit} * 2));
+    max-width:         calc(#{$default-page-width} + (#{$spacing-unit} * 2));
+    min-width: -webkit-calc(#{$default-page-width} + (#{$spacing-unit} * 2));
+    min-width:         calc(#{$default-page-width} + (#{$spacing-unit} * 2));   
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit;
@@ -162,13 +117,14 @@ pre {
     @extend %clearfix;
 
     @include media-query($on-laptop) {
-        max-width: -webkit-calc(800px - (#{$spacing-unit}));
-        max-width:         calc(800px - (#{$spacing-unit}));
+        max-width: -webkit-calc(#{$default-page-width} + (#{$spacing-unit} * 2));
+        max-width:         calc(#{$default-page-width} + (#{$spacing-unit} * 2));
+        min-width: -webkit-calc(#{$default-page-width} + (#{$spacing-unit} * 2));
+        min-width:         calc(#{$default-page-width} + (#{$spacing-unit} * 2));   
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
     }
 }
-
 
 
 /**
@@ -182,7 +138,6 @@ pre {
         clear: both;
     }
 }
-
 
 
 /**

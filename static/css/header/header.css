@@ -1,0 +1,16 @@
+.fullnavbar {
+  background: #fff;
+  border-bottom: 1px solid #f4a330;
+  padding: 22px 0;
+}
+
+.navbar .navitem {
+  margin: 15px;
+}
+
+#logo {
+  font-weight: 700;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+

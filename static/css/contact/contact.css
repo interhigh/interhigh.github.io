@@ -1,13 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat:700,400);
-
 body {
   font-family: 'Montserrat', sans-serif !important;
   background: #f4f7f8 !important;
-}
-
-#logo {
-  font-weight: 700;
-  font-size: 2em;
 }
 
 .email {
@@ -20,11 +13,7 @@ body {
   padding: 50px 0 15px 0;
 }
 
-.navbar {
-  padding: 22px 0;
-}
-
-.content {
+.whiteBG {
   background: #fff;
 }
 
@@ -32,16 +21,8 @@ body {
   padding: 80px 0 0 0;
 }
 
-.fullnavbar {
-  background: #fff;
-}
-
 .fullborder {
   border-bottom: 1px solid #f4a330;
-}
-
-.navbar .navitem {
-  margin: 15px;
 }
 
 .city {

@@ -1,0 +1,94 @@
+.home {
+  button {
+    background-color: #F27242;
+    border-color: #F27242;
+    border-radius: 4px;
+    border-style: solid;
+    color: #FFF;
+  }
+  button:hover {
+    background-color: #F15A22;
+    border-color: #F15A22;
+  }
+
+  .background-content {
+    background-image: url("/assets/ih_church_welcome.jpg");
+    text-align:center;
+    height:475px;
+    min-width:1000px; // worry about responsive-ness later
+    background-color:#DDD;
+    padding:200px 280px 15px 300px;
+
+    .description {
+      padding:40px 50px 40px 50px;
+      min-width:510px;
+      background-color:#EEE;
+      .title {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .services {
+    margin: 50px 0 0 0;
+    padding:0 80px 0 145px;
+    min-width:1000px; // worry about responsive-ness later
+
+    .service {
+      display:inline-block;width:222px;
+      margin: 0 18px 0 0;
+    }
+  }
+
+  .locations-section {
+    padding:0 140px 75px 145px;
+    min-width:1000px; // worry about responsive-ness later
+
+    .location-list {
+      .description {
+        display:inline;
+      }
+
+      ul {
+        display:inline;
+      }
+
+      li {
+        display:inline;
+        list-style-type: none;
+      }
+    }
+    .map {
+      height:350px;background-color:#DDD;
+    }
+  }
+
+  .promo-video-section {
+    padding:75px 140px 75px 145px;
+    min-width:1000px; // worry about responsive-ness later
+
+    .video {
+      height:420px;
+      background-color:#DDD;
+    }
+
+  }
+
+  .signup-section {
+    text-align:center;
+    padding:75px 140px 75px 145px;
+    min-width:1000px; // worry about responsive-ness later
+
+    .signup-form {
+      input {
+        border: 1px solid #b9b9af;
+        min-height: 35px;
+      }
+      button {
+        height: 37px;
+      }
+    }
+
+  }
+
+}

@@ -15,6 +15,25 @@
   padding-bottom: 40px;
 }
 
+.single-picture img {
+  position: relative;
+}
+
+.single-picture .picture-overlay {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  display: none;
+  background-color: #f4a330;
+  opacity: 0.5;
+}
+
+.single-picture:hover .picture-overlay {
+  display: inline;
+}
+
 .about-us .our-mission {
   background: #fff;
   padding-bottom: 80px;

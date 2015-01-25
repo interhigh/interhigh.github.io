@@ -1,3 +1,6 @@
+.white {
+  background:white;
+}
 .aDay {
 
   .smallGroup {
@@ -15,7 +18,8 @@
 
   .messages {
     width: 940px;
-    margin: 80px auto;
+    margin: 0px auto;
+    padding: 80px 0 20px;
     .featured {
       display:flex;
       flex-direction:row;

@@ -3,12 +3,75 @@
   width: 100%;
 }
 
-.text-section {
-  margin-top: 80px;
-  margin-bottom: 80px;
+.about-us .picture-grids {
+  background: #fff;
 }
 
-.picture-grid {
-  margin-top: 30px;
+.about-us .picture-grid {
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
 
+.about-us .our-mission {
+  background: #fff;
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+
+.about-us .mission-statement {
+}
+
+.about-us .mission-statement .mission-statement-content {
+  text-align: center;
+  padding: 60px 0 20px 0;
+}
+
+.about-us .statement {
+  font-size: 36px;
+  padding: 14px 0;
+  line-height: 20px;
+}
+
+.about-us .statement-explained {
+  padding: 10px;
+}
+
+.about-us .statement-explained-text {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.signup {
+  margin: 10px 0;
+}
+
+.email-us {
+  padding: 14px;
+}
+
+.email-us a {
+  color: #f4a330;
+}
+
+.email-us a:hover {
+  color: #f15a22;
+}
+
+button {
+  background-color: #f4a330;
+  border-color: #f4a330;
+  border-radius: 4px;
+  border-style: solid;
+  color: #FFF;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #f15a22;
+  border-color: #f15a22;
+}
+
+button.signup-button {
+  padding: 10px 18px;
+  text-transform: uppercase;
+}

@@ -88,13 +88,13 @@
         li {
           list-style: none;
           display:inherit;
-          margin-right: 30px;
+          margin-right: 20px;
+          padding: 10px;
           line-height: 1;
         }
         .current {
           background:white;
           color:$orange;
-          padding: 10px;
         }
       }
     }

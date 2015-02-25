@@ -12,52 +12,69 @@ layout: default
   </div>
 
   <div class="services-section">
-    <div class="service">
-    <img src="/assets/home/service-icon-youth-worship-service.svg" alt="Youth Worship Service Icon">
-      <div class="title">Youth Worship Service</div>
-      <div class="description">Lorem ipsum dolor sit amet, facer recusabo in nec. At dicant sententiae mei.  Ei ullum clita facete est, prima labore iudicabit eu vel</div>
-    </div>
-    <div class="service">
-      <img src="/assets/home/service-icon-students.svg" alt="Students Icon">
-      <div class="title">Middle to High School</div>
-      <div class="description">Lorem ipsum dolor sit amet, facer recusabo in nec. At dicant sententiae mei.  Ei ullum clita facete est, prima labore iudicabit eu vel</div>
-    </div>
-    <div class="service">
-      <img src="/assets/home/service-icon-small-group.svg" alt="Small Group Icon">
-      <div class="title">Small Group</div>
-      <div class="description">Lorem ipsum dolor sit amet, facer recusabo in nec. At dicant sententiae mei.  Ei ullum clita facete est, prima labore iudicabit eu vel</div>
-    </div>
-    <div class="service">
-      <img src="/assets/home/service-icon-at-your-church.svg" alt="At Your Church Icon">
-      <div class="title">At Your Church</div>
-      <div class="description">Lorem ipsum dolor sit amet, facer recusabo in nec. At dicant sententiae mei.  Ei ullum clita facete est, prima labore iudicabit eu vel</div>
-    </div>
-  </div>
-
-
-  <div style="height:350px;">
-    <!-- TODO: placeholder for something? -->
+      <div class="row">
+        <div class="small-12 medium-6 large-3 columns">
+        <div class="service">
+          <img src="/assets/home/service-icon-youth-worship-service.svg" alt="Youth Worship Service Icon">
+          <div class="title">Youth Worship Service</div>
+          <div class="description">Every Sunday, InterHigh volunteers come to your church to provide a Sunday program for middle and high school youth. This includes relatable messages, small group time and activities.</div>
+        </div>
+        </div>
+        <div class="small-12 medium-6 large-3 columns">
+        <div class="service">
+          <img src="/assets/home/service-icon-students.svg" alt="Students Icon">
+          <div class="title">Retreats</div>
+          <div class="description">Twice a year, we gather the youths from all the different churches together for a retreat. It’s a time of biblical and relevant messages, fellowship, studying God’s word, and having fun together.</div>
+        </div>
+        </div>
+        <div class="small-12 medium-6 large-3 columns">
+        <div class="service">
+          <img src="/assets/home/service-icon-small-group.svg" alt="Small Group Icon">
+          <div class="title">InterHigh Monthly</div>
+          <div class="description">Once a month, students from the different InterHigh churches get together for a one day outing, where they have the chance to bond with Christian students from other churches.</div>
+        </div>
+        </div>
+        <div class="small-12 medium-6 large-3 columns">
+        <div class="service">
+          <img src="/assets/home/service-icon-at-your-church.svg" alt="At Your Church Icon">
+          <div class="title">Worldview Camps</div>
+          <div class="description">Interhigh provides a one day training camp that is open to all youth groups to train and equip your students in apologetics and Christian living.</div>
+        </div>
+        </div>
+      </div>
   </div>
 
   <div class="locations-section">
-    <nav class="location-list">
-      <div class="title">We go to your church.</div>
-      <ul>
-        <li>SF Bay Area</li>
-        <li>Austin</li>
-        <li>Minneapolis</li>
-        <li>LA Area</li>
-      </ul>
-    </nav>
-    
-    <!-- TODO: make this tabbed with 3 other map images -->
-    <div class="map">
-      <img src="/assets/home/map_sfbayarea.png" alt="SF Bay Area Map">
+    <div class="location-list">
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="row location-text">
+            <div class="small-12 medium-4 large-4 columns">
+              <div class="title">We go to your church.</div>
+            </div>
+            <div class="small-12 medium-8 large-8 columns">
+              <ul>
+                <li>SF Bay Area</li>
+                <li>Austin</li>
+                <li>Minneapolis</li>
+                <li>LA Area</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="large-12 columns">
+          <div class="map">
+            <img src="/assets/home/map_sfbayarea.png" alt="SF Bay Area Map">
+          </div>
+        </div>
+        </div>
+      </div>
     </div>
-  </div>
 
   <div class="promo-video-section">
-    <div class="video"><!-- TODO: Video goes here --></div>
+    <div class="video">
+    <iframe src="//player.vimeo.com/video/95575255" width="912" height="513" frameborder="0" title="Interhigh Promotional Video 2014" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
   </div>
 
   <div class="signup-section">
@@ -66,21 +83,6 @@ layout: default
     <div class="signup-form">
       <input type="text" placeholder="Your email address">
       <button>Sign up for free</button>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <div class="site-footer">
-    <div class="wrapper">
-      <nav class="site-nav">
-        <div class="trigger">
-          {% for entry in site.navigation_bar_entries %}
-            {% if entry.title %}
-            <a class="page-link" href="{{ entry.path | prepend: site.baseurl }}">{{ entry.title }}</a>
-            {% endif %}
-          {% endfor %}
-        </div>
-      </nav>
     </div>
   </div>
 

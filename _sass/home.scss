@@ -13,8 +13,9 @@
 
   .background-content {
     background-image: url("/assets/home/ih_church_welcome.jpg");
-    text-align:center;
-    height:475px;
+    background-size: cover;
+    text-align: center;
+    height: 550px;
     min-width:1000px; // worry about responsive-ness later
     background-color:#DDD;
     padding:200px 280px 15px 300px;
@@ -41,18 +42,17 @@
   }
 
   .services-section {
-    padding:50px 80px 55px 145px;
-    min-width:1000px; // worry about responsive-ness later
     background-color: $white;
+    width: 100%;
+    padding: 40px 0;
 
     .service {
-      display:inline-block;width:222px;
-      margin: 0 18px 0 0;
+      padding: 10px 0;
 
       .title {
-        margin: 20px 0 15px 0;
         font-size: 17px;
         line-height: 21px;
+        margin: 16px 0;
       }
 
       .description {
@@ -63,45 +63,41 @@
   }
 
   .locations-section {
-    margin: 20px 0 0 0;
-    padding:0 140px 75px 145px;
-    min-width:1000px; // worry about responsive-ness later
     background-color: $grey-background;
+    padding: 64px 0;
 
     .location-list {
-      margin: 0 0 40px 0;
       .title {
-        display:inline;
-        font-size: 28px;
+        font-size: 26px;
         line-height: 33px;
-      }
+       }
 
-      ul {
-        display:inline;
-      }
+       .location-text {
+         padding-bottom: 20px;
+       }
 
-      li {
-        display:inline;
-        list-style-type: none;
-        padding: 5px 5px;
-        margin: 0 10px;
-        font-size: 14px;
-        line-height: 20px;
-      }
-    }
-    .map {
-      height:350px;background-color:#DDD;
+       ul {
+         display: inline;
+         margin-left: 0;
+       }
+
+       li {
+         display:inline;
+         list-style-type: none;
+         padding: 5px 5px 5px 0;
+         margin: 0 20px 0 0;
+         font-size: 14px;
+         line-height: 20px;
+       }
     }
   }
 
   .promo-video-section {
-    padding:75px 140px 75px 145px;
-    min-width:1000px; // worry about responsive-ness later
     background-color: $white;
+    padding: 80px 0;
 
     .video {
-      height:420px;
-      background-color:#DDD;
+      text-align: center;
     }
 
   }

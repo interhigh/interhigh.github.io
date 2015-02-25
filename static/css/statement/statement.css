@@ -1,0 +1,27 @@
+.site-header .fullnavbar {
+  border: 0;
+}
+
+.statement-of-faith .full-width {
+  width: 100%;
+}
+
+.statement-of-faith .statement-section {
+  background: #fff;
+  padding-bottom: 80px;
+  padding-top: 20px;
+}
+
+.statement-of-faith .statement-section a,
+.statement-of-faith .statement-section a:visited {
+  color: #19d;
+}
+
+.statement-of-faith .statement-section a:hover {
+  color: #f4a330;
+}
+
+.footer-link {
+  text-align: center;
+  padding-top: 40px;
+}

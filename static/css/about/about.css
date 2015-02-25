@@ -63,6 +63,12 @@
   line-height: 24px;
 }
 
+.about-us .statement-of-faith {
+  background: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
 .signup {
   margin: 10px 0;
 }

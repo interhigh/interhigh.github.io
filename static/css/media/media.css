@@ -1,0 +1,58 @@
+.media .full-width {
+  width: 100%;
+}
+
+.media .winterhigh {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.media .module.parallax {
+  height: 700px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.media .module.parallax.parallax-1 {
+  background-image: url("./b1.jpg");
+}
+
+.media .message-grid {
+  padding-top: 30px;
+  padding-bottom: 16px;
+  background:#fff;
+}
+
+.media .statement {
+  font-size: 36px;
+  text-align: left;
+}
+
+.media .statement-text {
+	font-size: 16px;
+	line-height: 24px;
+	text-align: left;
+	padding-top: 24px;
+}
+
+.media .fellowship {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#owl-demo .item{
+  margin: 3px;
+}
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.media .smallgroup {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background:#fff;
+}

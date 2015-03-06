@@ -1,0 +1,136 @@
+---
+layout: default
+title: media
+---
+
+  <!-- TODO:MAKE EVERYTHING RESPONSIVE -->
+
+<!-- Photos and Videos -->
+<link rel="stylesheet" href="../static/css/media/media.css" />
+
+  <!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="../static/owl-carousel/owl.carousel.css">
+<link rel="stylesheet" href="../static/owl-carousel/owl.theme.css">
+
+<script src="../static/js/modernizr.js"></script>
+
+<div class="media">
+
+<!-- FLEX-VIDEO ISNT WORKING! WHY NOT RESPONSIVE --> 
+<div class="winterhigh">
+  <div class="content row">
+     <div class="large-12 columns">
+      <div class="statement">
+        Winterhigh Retreat 2014
+      </div>
+    </div>
+    <div class="large-12 columns">
+      <div class="flex-video widescreen vimeo">
+        <iframe src="https://player.vimeo.com/video/117065308" width="400" height="225" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="module parallax parallax-1">
+</div>
+
+
+<div class="message-grid">
+
+  <div class="message-grid content row">
+    <div class="large-8 columns">
+      <img class="message full-width" src="img/msg1.jpg" />
+    </div>
+
+    <div class="large-4 columns">
+      <div class="statement">
+        Message
+      </div>
+      <div class="statement-text">
+          Interhigh staff teach Bible-based messages and engage students with personal stories and video/audio clips when appropriate. After the message, the students break off into small groups to share and pray for each other.
+      </div>  
+    </div>
+  </div>
+  <!-- images arent same size :X oops :X image tags? -->
+  <div class="message-grid content row">
+    <div class="medium-3 columns">
+      <img class="message full-width" src="img/msg3.png" />
+    </div>
+    <div class="medium-3 columns">
+      <img class="message full-width" src="img/msg2.png" />
+    </div>
+    <div class="medium-3 columns">
+      <img class="message full-width" src="img/msg4.png" />
+    </div>
+    <div class="medium-3 columns">
+      <img class="message full-width" src="img/msg5.png" />
+    </div>
+  </div>
+</div>
+
+
+
+<div class="fellowship">
+  <div class="content row">
+    <div class="large-12 columns">
+      <div class="statement">
+        Fellowship and Activities
+      </div>
+    </div>
+  </div>
+
+  <div id="owl-demo" class="owl-carousel">
+    <!-- images arent same size :X oops :X FIX PLZ -->        
+    <div class="item"><img src="img/f1.jpg" ></div>
+    <div class="item"><img src="img/f2.jpg" ></div>
+    <div class="item"><img src="img/f3.jpg" ></div>
+    <div class="item"><img src="img/f4.jpg" ></div>
+    <div class="item"><img src="img/f5.jpg" ></div>
+    <div class="item"><img src="img/f6.jpg" ></div>
+    <div class="item"><img src="img/f7.jpg" ></div>
+    <div class="item"><img src="img/f8.jpg" ></div>
+    <div class="item"><img src="img/f9.jpg" ></div>
+    <div class="item"><img src="img/f10.jpg" ></div>
+    <div class="item"><img src="img/f11.jpg" ></div>
+    <div class="item"><img src="img/f12.jpg" ></div>
+  </div>
+
+</div>
+
+
+<div class="smallgroup">
+  <div class="content row">
+    <div class="large-12 columns">
+      <div class="statement">
+        Small Group
+      </div>
+    </div>
+  </div>
+
+  <!-- POPULATE S1 and S2. images arent same size :X oops :X image tags? -->
+  <div class="smallgroup-grid content row">
+    <div class="large-9 columns">
+      <img class="message full-width" src="img/s1.png" />
+    </div>
+    <div class="large-3 columns">
+      <img class="message full-width" src="img/s2.png" />
+    </div>
+
+</div>
+
+</div>
+
+<script src="../static/js/jquery-1.9.1.min.js"></script>
+<script src="../static/owl-carousel/owl.carousel.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+    $("#owl-demo").owlCarousel({
+      autoPlay: 3000,
+      items : 4,
+      itemsDesktop : [1280,3],
+      itemsDesktopSmall : [860,2]
+    });
+  });
+</script>

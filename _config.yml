@@ -38,8 +38,8 @@ navigation_bar_entries:
     title: "About Us"
     path: "/about/"
   - 
-    title: "A Day At Interhigh"
-    path: "/dayatih/"
+    title: "Photos and Videos"
+    path: "/media/"
   - 
     title: "Contact"
     path: "/contact/"

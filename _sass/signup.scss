@@ -1,0 +1,43 @@
+/* CSS for signup modal. See signup_modal.html */
+
+#signup-modal {
+  display: none;
+  background: #fff;
+  opacity: 0.80;
+  max-width: 600px;
+  padding: 20px;
+
+  .signup-button-row {
+    text-align: right;
+  }
+  
+  .signup-title {
+    font-size: 0.9em;
+  }
+
+  select {
+    margin: 0 0 1rem 0 !important;
+  }
+
+  #signup-close {
+    background-color: #aaa;
+  }
+
+  #signup-close:hover {
+    background-color: #bbb;
+  }
+
+  #signup-submit {
+    background-color: #5a5;
+  }
+
+  #signup-submit:hover {
+    background-color: #8d9;
+  }
+
+  button {
+    border-radius: 4px;
+    margin-left: 4px;
+    color: #fff;
+  }
+}

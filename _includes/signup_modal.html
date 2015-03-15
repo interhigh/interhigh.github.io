@@ -1,0 +1,91 @@
+{% comment %}
+  Usage:
+  1) Make buttons with the class "signup-button" and the href "#signup-modal"
+  2) At the end of your file, add the following include:
+     {% include signup_modal.html %}
+ 
+  Example:
+  <button class="signup-button" href="#signup-modal">Sign up</button>
+{% endcomment %}
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://leanmodal.finelysliced.com.au/js/jquery.leanModal.min.js"></script>
+
+<div id="signup-modal">
+  <div id="signup-header">
+    <h2>Sign me up!</h2>
+    <p>Please let us know how you would like to be contacted, and we'll get back to you soon.</p>
+  </div>
+  
+  <form action="#">
+    <div class="signup-field">
+      <label class="signup-title">Location</label>
+      <div class="row">
+        <div class="small-12 medium-6 large-6 columns location-radio">
+          <input type="radio" id="location-bay-area" name="region" value="Bay Area, CA" />
+          <label for="location-bay-area">SF/Oakland/Bay Area, CA</label>
+        </div>
+        <div class="small-12 medium-6 large-6 columns location-radio">
+          <input type="radio" id="location-davis" name="region" value="Davis/Sacramento, CA" />
+          <label for="location-davis">Davis/Sacramento, CA</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="small-12 medium-6 large-6 columns location-radio">
+          <input type="radio" id="location-riverside" name="region" value="Riverside, CA" />
+          <label for="location-riverside">Riverside, CA</label>
+        </div>
+        <div class="small-12 medium-6 large-6 columns location-radio">
+          <input type="radio" id="location-la" name="region" value="Los Angeles, CA" />
+          <label for="location-la">Los Angeles, CA</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="small-12 medium-6 large-6 columns location-radio">
+          <input type="radio" id="location-san-diego" name="region" value="San Diego, CA" />
+          <label for="location-san-diego">San Diego, CA</label>
+        </div>
+        <div class="small-12 medium-6 large-6 columns location-radio">
+          <input type="radio" id="location-austin" name="region" value="Austin, TX" />
+          <label for="location-austin">Austin, TX</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="small-12 medium-6 large-6 columns location-radio">
+          <input type="radio" id="location-twin-cities" name="region" value="Twin Cities, MN" />
+          <label for="location-twin-cities">Twin Cities, MN</label>
+        </div>
+      </div>
+
+    </div>
+    <div class="signup-field">
+      <label class="signup-title" for="name">Name (Required)</label>
+      <input id="name" name="name" type="text" />
+    </div>
+
+    <div class="signup-field">
+      <label class="signup-title" for="church-name">Name of Church (Required)</label>
+      <input id="church-name" name="church_name" type="text" />
+    </div>
+
+    <div class="signup-field">
+      <label class="signup-title" for="phone">Phone</label>
+      <input id="phone" name="email" type="tel" />
+    </div>
+
+    <div class="signup-field">
+      <label class="signup-title" for="email">Email</label>
+      <input id="email" name="email" type="email" />
+    </div>
+
+    <div class="signup-button-row">
+      <button type="submit" id="signup-close" class="modal_close">Close</button>
+      <button type="submit" id="signup-submit">Sign Up »</button>
+    </div>
+   </form>
+</div>
+
+<script>$(".signup-button").leanModal({closeButton: ".modal_close", close: true});</script>

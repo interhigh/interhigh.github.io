@@ -2,14 +2,17 @@
 layout: default
 ---
 
+
+
 <div class="home">
   <div class="background-content">
     <div class="description">
       <div class="title">Youth Ministry at Your Church</div>
       <span>Let us know you're interested in InterHigh today!</span>
-      <div><button>Sign up for free</button></div>
+      <div><button class="signup-button" href="#signup-modal">Sign up for free</button></div>
     </div>
   </div>
+
 
   <div class="services-section">
       <div class="row">
@@ -81,9 +84,16 @@ layout: default
     <div class="title">A Youth Ministry in Every Church</div>
     <div class="description">Let us know you're interested in Interhigh today!</div>
     <div class="signup-form">
-      <input type="text" placeholder="Your email address">
-      <button>Sign up for free</button>
+      <input type="email" id="footer-signup-email" placeholder="Your email address">
+      <button 
+        class="signup-button" 
+        href="#signup-modal" 
+        onclick="$('.signup-field #email')[0].value = $('#footer-signup-email')[0].value">
+        Sign up for free
+      </button>
     </div>
   </div>
 
 </div>
+
+{% include signup_modal.html %}

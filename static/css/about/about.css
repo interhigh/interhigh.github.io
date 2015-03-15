@@ -95,8 +95,8 @@ button {
 }
 
 button:hover {
-  background-color: #f15a22;
-  border-color: #f15a22;
+  background-color: #1caeec;
+  border-color: #1caeec;
 }
 
 button.signup-button {

@@ -12,12 +12,13 @@
 <script type="text/javascript" src="http://leanmodal.finelysliced.com.au/js/jquery.leanModal.min.js"></script>
 
 <div id="signup-modal">
+  <div id="signup-status"></div>
   <div id="signup-header">
     <h2>Sign me up!</h2>
     <p>Please let us know how you would like to be contacted, and we'll get back to you soon.</p>
   </div>
   
-  <form action="#">
+  <form id="signup-form">
     <div class="signup-field">
       <label class="signup-title">Location</label>
       <div class="row">
@@ -73,7 +74,7 @@
 
     <div class="signup-field">
       <label class="signup-title" for="phone">Phone</label>
-      <input id="phone" name="email" type="tel" />
+      <input id="phone" name="phone" type="tel" />
     </div>
 
     <div class="signup-field">
@@ -82,10 +83,59 @@
     </div>
 
     <div class="signup-button-row">
-      <button type="submit" id="signup-close" class="modal_close">Close</button>
-      <button type="submit" id="signup-submit">Sign Up »</button>
+      <button type="submit" id="signup-close" class="grey-button modal_close">Close</button>
+      <button type="submit" id="signup-submit" class="green-button" href="#">Sign Up »</button>
     </div>
    </form>
 </div>
 
-<script>$(".signup-button").leanModal({closeButton: ".modal_close", close: true});</script>
+<script>
+$(".signup-button").leanModal({closeButton: ".modal_close", close: true});
+
+$('#signup-submit').click(function(e) { 
+  e.preventDefault(); 
+
+  data = $('#signup-form').serialize();
+  $("#signup-form :input").prop("disabled", true);
+  $("#signup-close").prop("disabled", false);
+
+  messageSuccess = function(message) {
+    $("#signup-status").removeClass().addClass('alert-success');
+    $("#signup-status").text(message);
+  }
+
+  messageError = function(message) {
+    $("#signup-status").removeClass().addClass('alert-error');
+    $("#signup-status").text(message);
+  }
+
+  onSuccess = function(response) {
+    success = response['success'];
+    if (!success) {
+      $("#signup-form :input").prop("disabled", false);
+      messageError(response['message']);
+      return;
+    }
+
+    $("#signup-submit").hide();
+    $("#signup-close").addClass("green-button").removeClass("grey-button");
+    $("#signup-close").text("Done");
+    messageSuccess(response['message']);
+  };
+
+  onAjaxError = function(response) {
+    $("#signup-form :input").prop("disabled", false);
+    messageError('We were unable to save your information at this time due to an unknown error. Please come back and try again later. We apologize for the inconvenience.');
+  };
+
+  $.ajax({
+      url: 'https://script.google.com/macros/s/AKfycbyvpGvS1LcYzZ5DisconKn3Z56IbBWhOOjCw5pBQEzEubZU8bA/exec',
+      jsonpCallback: "signup_result",
+      dataType: "jsonp",
+      data: data,
+      success: onSuccess,
+      error: onAjaxError,
+  });
+});
+
+</script>

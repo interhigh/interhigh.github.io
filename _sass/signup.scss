@@ -27,23 +27,41 @@
     font-size: 0.9em;
   }
 
+  .alert-error {
+    background-color: #fff5f5;
+    border: 1px solid #ddd;
+    border-left-color: #e44;
+    margin-bottom: 8px;
+    border-left-width: 5px;
+    padding: 15px;
+  }
+
+  .alert-success {
+    background-color: #f9fff9;
+    border: 1px solid #ddd;
+    border-left-color: #5b5;
+    margin-bottom: 8px;
+    border-left-width: 5px;
+    padding: 15px;
+  }
+
   select {
     margin: 0 0 1rem 0 !important;
   }
 
-  #signup-close {
+  .grey-button {
     background-color: #aaa;
   }
 
-  #signup-close:hover {
+  .grey-button:hover {
     background-color: #bbb;
   }
 
-  #signup-submit {
+  .green-button {
     background-color: #5a5;
   }
 
-  #signup-submit:hover {
+  .green-button:hover {
     background-color: #8d9;
   }
 

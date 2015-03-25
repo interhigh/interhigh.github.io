@@ -17,10 +17,11 @@
   background: #fff;
   opacity: 0.80;
   max-width: 600px;
-  padding: 20px;
+  padding: 15px 0px;
 
   .signup-button-row {
     text-align: right;
+    margin-top: 16px;
   }
   
   .signup-title {
@@ -31,7 +32,7 @@
     background-color: #fff5f5;
     border: 1px solid #ddd;
     border-left-color: #e44;
-    margin-bottom: 8px;
+    margin: 0 8px 8px 8px;
     border-left-width: 5px;
     padding: 15px;
   }
@@ -40,7 +41,7 @@
     background-color: #f9fff9;
     border: 1px solid #ddd;
     border-left-color: #5b5;
-    margin-bottom: 8px;
+    margin: 0 8px 8px 8px;
     border-left-width: 5px;
     padding: 15px;
   }

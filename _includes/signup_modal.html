@@ -13,14 +13,25 @@
 <div id="signup-modal">
   <div id="signup-status"></div>
   <div id="signup-header">
-    <h2>Sign me up!</h2>
-    <p>Please let us know how you would like to be contacted, and we'll get back to you soon.</p>
+    <div class="row">
+      <div class="small-12 medium-12 large-12 columns">
+        <h2>Sign me up!</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="small-12 medium-12 large-12 columns">
+        <p>Please let us know how you would like to be contacted, and we'll get back to you soon.</p>
+      </div>
+    </div>
   </div>
   
   <form id="signup-form">
     <div class="signup-field">
-      <label class="signup-title">Location</label>
       <div class="row">
+        <div class="small-12 medium-12 large-12 columns">
+          <label class="signup-title">Location</label>
+        </div>
         <div class="small-12 medium-6 large-6 columns location-radio">
           <input type="radio" id="location-bay-area" name="region" value="Bay Area, CA" />
           <label for="location-bay-area">SF/Oakland/Bay Area, CA</label>
@@ -61,29 +72,59 @@
       </div>
 
     </div>
-    <div class="signup-field">
-      <label class="signup-title" for="name">Name (Required)</label>
-      <input id="name" name="name" type="text" />
+
+
+    <div class="row">
+      <div class="small-12 medium-6 large-6 columns">
+        <div class="signup-field">
+          <label class="signup-title" for="name">Name (Required)</label>
+          <input id="name" name="name" type="text" />
+        </div>
+      </div>
+
+      <div class="small-12 medium-6 large-6 columns">
+        <div class="signup-field">
+          <label class="signup-title" for="church-name">Name of Church (Required)</label>
+          <input id="church-name" name="church_name" type="text" />
+        </div>
+      </div>
     </div>
 
-    <div class="signup-field">
-      <label class="signup-title" for="church-name">Name of Church (Required)</label>
-      <input id="church-name" name="church_name" type="text" />
+
+    <div class="row">
+      <div class="small-12 medium-6 large-6 columns">
+        <div class="signup-field">
+          <label class="signup-title" for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" />
+        </div>
+      </div>
+
+      <div class="small-12 medium-6 large-6 columns">
+        <div class="signup-field">
+          <label class="signup-title" for="email">Email</label>
+          <input id="email" name="email" type="email" />
+        </div>
+      </div>
     </div>
 
-    <div class="signup-field">
-      <label class="signup-title" for="phone">Phone</label>
-      <input id="phone" name="phone" type="tel" />
+
+    <div class="row">
+      <div class="small-12 medium-12 large-12 columns">
+        <div class="signup-field">
+          <label class="signup-title" for="comments">Comments</label>
+          <textarea id="comments" name="comments"></textarea>
+        </div>
+      </div>
     </div>
 
-    <div class="signup-field">
-      <label class="signup-title" for="email">Email</label>
-      <input id="email" name="email" type="email" />
-    </div>
 
-    <div class="signup-button-row">
-      <button type="submit" id="signup-close" class="grey-button modal_close">Close</button>
-      <button type="submit" id="signup-submit" class="green-button" href="#">Sign Up »</button>
+    <div class="row">
+      <div class="small-12 medium-12 large-12 columns">
+        <div class="signup-button-row">
+          <button type="submit" id="signup-close" class="grey-button modal_close">Close</button>
+          <button type="submit" id="signup-submit" class="green-button" href="#">Sign Up »</button>
+        </div>
+      </div>
     </div>
    </form>
 </div>

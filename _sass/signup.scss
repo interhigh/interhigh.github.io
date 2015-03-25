@@ -50,20 +50,20 @@
     margin: 0 0 1rem 0 !important;
   }
 
-  .grey-button {
+  .primary-button {
+    background-color: $orange;
+  }
+
+  .primary-button:hover {
+    background-color: $bright-orange;
+  }
+
+  .secondary-button {
     background-color: #aaa;
   }
 
-  .grey-button:hover {
+  .secondary-button:hover {
     background-color: #bbb;
-  }
-
-  .green-button {
-    background-color: #5a5;
-  }
-
-  .green-button:hover {
-    background-color: #8d9;
   }
 
   button {

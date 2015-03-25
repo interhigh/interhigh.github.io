@@ -52,3 +52,97 @@
   padding-bottom: 30px;
   padding-top: 30px;
 }
+
+.about-us .signup-section {
+  text-align: center;
+  padding: 75px 140px 75px 145px;
+  min-width: 1000px; }
+.about-us .signup-section .title {
+  font-size: 38px;
+  line-height: 43px; }
+.about-us .signup-section .description {
+  font-size: 16px;
+  line-height: 22px;
+  margin: 15px 0; }
+.about-us .signup-section .signup-form {
+  text-align: center; }
+.about-us .signup-section .signup-form input {
+  vertical-align: middle;
+  display: inline-block;
+  border: 1px solid #b9b9af;
+  padding: 15px 20px;
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 37px;
+  font-size: 14px;
+  margin: 0 5px 0 5px; }
+.about-us .signup-section .signup-form button {
+  vertical-align: middle;
+  display: inline-block;
+  height: 37px;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 5px 0 5px;
+  padding: 10px 20px;
+  text-transform: uppercase; }
+.about-us button {
+  background-color: #f4a330;
+  border-color: #f4a330;
+  border-radius: 4px;
+  border-style: solid;
+  color: #FFF; }
+.about-us button:hover {
+  background-color: #fb4;
+  border-color: #fb4; }
+
+* CSS for signup modal. See signup_modal.html */
+/* Black background for popup */
+#lean_overlay {
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  display: none; }
+
+#signup-modal {
+  display: none;
+  background: #fff;
+  opacity: 0.80;
+  max-width: 600px;
+  padding: 15px 0px; }
+  #signup-modal .signup-button-row {
+    text-align: right;
+    margin-top: 16px; }
+  #signup-modal .signup-title {
+    font-size: 0.9em; }
+  #signup-modal .alert-error {
+    background-color: #fff5f5;
+    border: 1px solid #ddd;
+    border-left-color: #e44;
+    margin: 0 8px 8px 8px;
+    border-left-width: 5px;
+    padding: 15px; }
+  #signup-modal .alert-success {
+    background-color: #f9fff9;
+    border: 1px solid #ddd;
+    border-left-color: #5b5;
+    margin: 0 8px 8px 8px;
+    border-left-width: 5px;
+    padding: 15px; }
+  #signup-modal select {
+    margin: 0 0 1rem 0 !important; }
+  #signup-modal .primary-button {
+    background-color: #f4a330; }
+  #signup-modal .primary-button:hover {
+    background-color: #fb4; }
+  #signup-modal .secondary-button {
+    background-color: #aaa; }
+  #signup-modal .secondary-button:hover {
+    background-color: #bbb; }
+  #signup-modal button {
+    border-radius: 4px;
+    margin-left: 4px;
+    color: #fff; }

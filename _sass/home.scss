@@ -67,6 +67,16 @@
     background-color: $grey-background;
     padding: 64px 0;
 
+    .location-map {
+      .location-map-shown {
+        display: inline-block;
+      }
+
+      .location-map-hidden {
+        display: none;
+      }
+    }
+
     .location-list {
       .title {
         font-size: 26px;
@@ -75,6 +85,21 @@
 
        .location-text {
          padding-bottom: 20px;
+
+         .location-tabs {
+           padding-top: 4px;
+
+           a {
+             padding: 8px;
+           }
+
+           .location-tab-selected {
+             background-color: #fff;
+             border-color: #fff;
+             border-radius: 4px;
+             color: $orange;
+           }
+         }
        }
 
        ul {

@@ -1,16 +1,17 @@
-.home {
-  button {
-    background-color: $orange;
-    border-color: $orange;
-    border-radius: 4px;
-    border-style: solid;
-    color: #FFF;
-  }
-  button:hover {
-    background-color: $bright-orange;
-    border-color: $bright-orange;
-  }
+.page-content button {
+  background-color: $orange;
+  border-color: $orange;
+  border-radius: 4px;
+  border-style: solid;
+  color: #FFF;
+}
 
+.page-content button:hover {
+  background-color: $bright-orange;
+  border-color: $bright-orange;
+}
+
+.home {
   .background-content {
     background-image: url("/assets/home/ih_church_welcome.jpg");
     background-size: cover;

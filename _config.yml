@@ -38,6 +38,9 @@ navigation_bar_entries:
     title: "About Us"
     path: "/about/"
   - 
+    title: "Statement of Faith"
+    path: "/statement/"
+  - 
     title: "Photos and Videos"
     path: "/media/"
   - 

@@ -102,3 +102,21 @@
   padding: 5px 0 10px 0;
 }
 
+.picture-grids {
+  padding-bottom: 80px;
+}
+
+.churches {
+  background: #fff;
+  padding: 50px 0;
+}
+
+
+.churches .state-name {
+  font-size: 28px;
+  margin: 8px 0;
+}
+
+.churches .state {
+  margin: 16px 0;
+}

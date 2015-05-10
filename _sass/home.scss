@@ -12,29 +12,32 @@
 }
 
 .home {
-  .background-content {
-    background-image: url("/assets/home/ih_church_welcome.jpg");
-    background-size: cover;
+  .hero {
+    position: relative;
     text-align: center;
     height: 550px;
-    min-width:1000px; // worry about responsive-ness later
-    background-color:#DDD;
-    padding:200px 280px 15px 300px;
+
+    .hero-image {
+      position: absolute;
+    }
 
     .description {
-      padding:40px 50px 40px 50px;
-      min-width:510px;
+      position: absolute;
+      top: 307px;
+      left: 164px;
+      width: 656px;
+      padding: 10px 10px 20px 10px;
       background-color:#FBFBFB;
       opacity: 0.98;
       font-size: 16px;
       .title {
         text-transform: uppercase;
-        font-size: 30px;
+        font-size: 32px;
       }
 
       button {
         margin:20px 0 0 0;
-        padding: 15px 20px;
+        padding: 8px 16px;
         font-size: 14px;
         text-transform: uppercase;
         line-height: 20px;

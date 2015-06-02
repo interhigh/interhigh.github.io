@@ -20,14 +20,30 @@
 }
 
 .media .message-grid {
-  padding-top: 30px;
-  padding-bottom: 16px;
-  background:#fff;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
 .media .statement {
   font-size: 32px;
   text-align: left;
+}
+
+.media .worldview-camp {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.media .worldview-title {
+  font-size: 32px;
+}
+
+.media .worldview-subtitle {
+  padding-bottom: 10px;
+}
+
+.media .worldview-text {
+	font-size: 16px;
 }
 
 .media .statement-text {
@@ -38,7 +54,8 @@
 
 .media .fellowship {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
+  background: #fff;
 }
 
 #owl-demo .item{
@@ -52,6 +69,6 @@
 
 .media .smallgroup {
   padding-top: 30px;
-  padding-bottom: 30px;
-  background:#fff;
+  padding-bottom: 60px;
+  background: #fff;
 }

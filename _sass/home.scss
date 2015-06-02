@@ -13,7 +13,10 @@
 
 .home {
   .hero {
-    background-color: $white;
+    background: -webkit-linear-gradient($white, $grey-background); /* Safari 5.1 to 6.0 */
+    background: -o-linear-gradient($white, $grey-background); /* Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient($white, $grey-background); /* Firefox 3.6 to 15 */
+    background: linear-gradient($white, $grey-background); /* Standard */
     position: relative;
     text-align: center;
     height: 620px;
@@ -47,7 +50,7 @@
   }
 
   .services-section {
-    background-color: $grey-background;
+    background-color: $white;
     width: 100%;
     padding: 40px 0;
 
@@ -75,7 +78,7 @@
   }
 
   .locations-section {
-    background-color: $white;
+    background-color: $grey-background;
     padding: 64px 0;
 
     .location-map {

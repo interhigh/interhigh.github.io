@@ -3,24 +3,24 @@
   <div class="fullnavbar">
 
     <div class="navbar row">
-      <div class="small-12 medium-2 large-3 columns">
+      <div class="small-12 medium-12 large-3 columns">
         <div id="logo">
           <a href="{{ site.baseurl }}/">{{ site.title }}</a>
         </div>
       </div>
 
-      <div class="small-12 medium-10 large-9 columns">
+      <div class="small-12 medium-12 large-9 columns">
       <nav>
         <ul class="buttonbar left button-group">
-        {% for entry in site.navigation_bar_entries %}
-          {% if entry.title %}
-          <li class="navitem">
-            <div>
-              <a href="{{ entry.path | prepend: site.baseurl }}">{{ entry.title }}</a>
-            </div>
-          </li>
-          {% endif %}
-        {% endfor %}
+          {% for entry in site.navigation_bar_entries %}
+            {% if entry.title %}
+              <li class="navitem">
+                <div>
+                  <a href="{{ entry.path | prepend: site.baseurl }}">{{ entry.title }}</a>
+                </div>
+              </li>
+            {% endif %}
+          {% endfor %}
         </ul>
       </div>
     </nav>

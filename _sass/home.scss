@@ -135,7 +135,15 @@
 
   .promo-video-section {
     background-color: $white;
-    padding: 80px 0;
+    padding: 64px 0 80px 0;
+    position: relative;
+
+    .title {
+      font-size: 26px;
+      line-height: 33px;
+      text-align: left;
+      padding-bottom: 20px;
+    }
 
     .video {
       text-align: center;

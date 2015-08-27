@@ -2,9 +2,7 @@
 title: InterHigh 
 email: info@interhigh.org
 description: > # this means to ignore newlines until "baseurl:"
-  The awesome web team of Kevin Tham, Tam Nguyen, Steven Hong, Gary Zhao, 
-  Brian Choi, Dung Tran, and David Wu are bringing you a brand new site
-  for InterHigh!
+  InterHigh volunteers come to your church to provide a Sunday program for middle and high school youth.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.interhigh.org"
 

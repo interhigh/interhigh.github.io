@@ -15,7 +15,7 @@
           {% for entry in site.navigation_bar_entries %}
             {% if entry.title %}
               <li class="navitem">
-                <div>
+                <div class="small-12 medium-12 large-9 columns">
                   <a href="{{ entry.path | prepend: site.baseurl }}">{{ entry.title }}</a>
                 </div>
               </li>

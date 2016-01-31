@@ -11,7 +11,7 @@ body {
   color: #00adef;
 }
 
-.state {
+.titleheader {
   text-transform: uppercase;
   border-bottom: 1px solid #eee;
   padding: 50px 0 15px 0;
@@ -29,7 +29,7 @@ body {
   border-bottom: 1px solid #f4a330;
 }
 
-.city {
+.devotional {
   padding: 10px 0;
   border-bottom: 1px solid #eee;
 }

@@ -87,3 +87,60 @@ This is a good resource to learn how to resolve conflicts: https://help.github.c
 
 * [Jekyll Documentation](http://jekyllrb.com/docs/home/) - Explains how Jekyll works
 * [Foundation Documentation](http://foundation.zurb.com/docs/index.html) - Our front-end styling framework
+
+
+-------------------------
+-------------------------
+
+# IH Website Code Overview
+This explains the overall structure of the IH website, and how to update the site as necessary.
+
+### Architecture
+ - The IH website is simply a static site (HTML/CSS/JS) running on top of Jekyll (a microblogging framework). Updating a page simply involves:
+   - 1) Editing an HTML/CSS file to display what you want it to.
+   - 2) Pushing the commit to the Git repository, hosted on Github.
+ - The only non-static portion is the IH signup form (button on the front page used to request IH at your church). This is the only code that lives separately from the Git repository (more below).
+ - When a new commit is made to the repo, it will automatically be pulled and deployed live to `interhigh.org`.
+ - The site is hosted on our GP servers. If you have questions regarding our servers, Steven Leung may know more, as he helped to set these servers up.
+
+
+### Project Directory Structure
+
+###### Individual pages (HTML):
+If you wanted to edit a particular page, simply update the corresponding HTML file, which can be found within its own subdirectory (with the exception of the homepage):
+ - `/about` - The about page
+ - `/contact` - The contact page
+ - `/devotionals` - The DT page
+ - `/media` - The Photos and Videos page
+ - `/index.html` - The main homepage (not in a subdirectory)
+
+###### CSS/SCSS Files:
+To edit the styling of the page, update the relevant CSS file. Styling files can be found in several locations:
+ - `/static/css` - This contains most of the CSS styles for each individual page. They are organized into their own respective folders.
+  - `/css` - This contains a few global styles and some one-off stylesheets
+
+
+###### Other static files
+ - Other static resources (e.g. `.js` files, devotional DOC/PDF files, etc) can be found within `/static`.
+
+
+###### Jekyll configuration file
+ - This can be found at `/_config.yml`.
+ - This configures general things related to the project, most notably the navigation bar entries. You would need to add a new entry here if you wanted to add another navbar item.
+
+
+### Editing the IH signup form
+ - The code for the IH signup form (button on the front page used to request IH at your church) is not found in the Git repository, but separately within Google Sheets. This code handles everything after the form is filled out and submitted to the server.
+   - This code does the following:
+     - 1) Updates a Google Sheets form with the submitted information
+     - 2) Sends a notification email to a list of addresses (IH leads)
+   - This code can be updated by signing into the Interhigh Google Account (ask Dave for the account details). Then:
+     - 1) Go to `https://sheets.google.com`
+     - 2) Edit the `Interhigh Website Responses` spreadsheet
+     - 3) In the top menu, click Tools > Script Editor
+     - 4) Edit the code as necessary. Here, you can add or remove email addresses to the contact list, update the notification email, or change the general behavior of a form submission.
+     - 5) Once you save the code, you'll need to publish the latest version. Clicking `File > Manage versions` will show all of the revisions of the code.
+     - 6) In the menu, click `Publish > Deploy as web app`. Update the project version to the new version that you just created with your changes.
+     - 7) Click Update. That's it, the code should be deployed!
+
+
